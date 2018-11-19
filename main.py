@@ -89,6 +89,7 @@ def main():
             else:
                 print('Sending {!r} to {}'.format(next_msg, s.getpeername()))
                 s.send(next_msg)
+                s.shutdown(1)
 
         # Handle "exceptional conditions"
         for s in exceptional:

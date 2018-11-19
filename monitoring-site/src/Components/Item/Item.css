@@ -1,0 +1,55 @@
+.item {
+    height: 120px;
+    margin-bottom: 30px
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    margin: 15px;
+    border: 1px solid;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #888;
+}
+
+.action-row {
+    font-size: .8em;
+    text-align: right;
+    padding: 3px;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+.delete {
+    cursor: pointer;
+    color: red;
+}
+
+.value-row {
+    height: 20px;
+}
+
+.value {
+    overflow: hidden;
+    transition: height .3s ease;
+}
+
+.value-closed {
+    height: 0px;
+}
+
+.value-open {
+    height: 20px;
+}
+
+.show-hide {
+    width: 97%;
+    text-align: right;
+}
+
+.show-hide-link {
+    cursor: pointer;
+
+}

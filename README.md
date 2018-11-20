@@ -47,14 +47,19 @@ $ cd ClientServerExercise/monitoring-site
 $ npm i
 ```
 
-6. Run the service
+6. Build the React site
+```bash
+$ npm run build
+```
+
+7. Run the service
 * You may choose any database name you'd like, but to see sample data populated, use 'database.sqlite'
 ```bash
 $ cd ..
 $ python main.py <db_name>
 ```
 
-7. Happy hacking!
+8. Happy hacking!
 * To view the monitoring site, navigate to http://localhost:8000
 * To interact with the data service, navigate to the base url(http://localhost:11211) and use the following url suffixes:
 

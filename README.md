@@ -24,48 +24,48 @@ In python, create a script that exposes 2 ports, 11211 and 8000. On the first po
 $ git clone https://github.com/mittelman29/ClientServerExercise.git
 ```
 
-2. Install & Run Memcached
+2. Install Memcached
 If you're on Mac, run:
 ```bash
 $ brew install memcached
 ```
 
-For all other OS flavors or for more detailed instructions:
-* Click here and follow directions: https://github.com/memcached/memcached/wiki/Install
+  * _For all other OS flavors or for more detailed instructions: https://github.com/memcached/memcached/wiki/Install_
 
-* Run memcached on port 11311 (default is 11211)
+3. Run memcached on port 11311 (default is 11211)
 ```bash
 $ memcached -p 11311 &
 ```
-3. Install prerequisites for data tier
+4. Install prerequisites for data tier
 ```bash
 $ sudo pip install python-binary-memcached
 ```
 
-4. Install prerequisites for web tier
+5. Install prerequisites for web tier
 ```bash
 $ cd ClientServerExercise/monitoring-site
 $ npm i
 ```
 
-5. Run the service
+6. Run the service
 * You may choose any database name you'd like, but to see sample data populated, use 'database.sqlite'
 ```bash
 $ cd ..
 $ python main.py <db_name>
 ```
 
-6. Happy hacking!
+7. Happy hacking!
 * To view the monitoring site, navigate to http://localhost:8000
-* To interact with the data service, navigate to the base url(http://localhost:11211/) and use the following url suffixes:
-1. base url => list all key/value pairs
-2. base url + /<key> => view single key/value pair
-3. base url + /set?<key>=<value> => create/update a key/value pair
-4. base url + /del/<key> => delete a key/value pair
+* To interact with the data service, navigate to the base url(http://localhost:11211) and use the following url suffixes:
+
+1. **base url** + / => list all key/value pairs
+2. **base url** + /**key** => view single key/value pair
+3. **base url** + /set?**key**=**value** => create/update a key/value pair
+4. **base url** + /del/**key** => delete a key/value pair
 
 ## License
 
-This was written for demonstration purposes and is shared with the public for educational reasons only. Please feel free to clone, fork or spoon this code as you see fit.
+This was written for demonstration and educational purposes only and is freely shared with the public. Please feel free to clone, fork or spoon this code as you see fit.
 
 ## Disclaimer
 

@@ -3,12 +3,6 @@ import { Row } from 'react-bootstrap';
 import './Header.css';
 
 class Header extends Component {
-    constructor(){
-        super();
-
-
-    }
-
 
     render() {
         return (
@@ -17,6 +11,7 @@ class Header extends Component {
             </Row>
         );
     }
+    
 }
 
 export default Header;

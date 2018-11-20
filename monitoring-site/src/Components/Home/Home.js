@@ -5,12 +5,6 @@ import ItemList from '../ItemList/ItemList';
 import './Home.css';
 
 class Home extends Component {
-    constructor(){
-        super();
-
-
-    }
-
 
     render() {
         return (
@@ -20,6 +14,7 @@ class Home extends Component {
             </Grid>
         );
     }
+    
 }
 
 export default Home;

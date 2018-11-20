@@ -4,7 +4,6 @@ import Item from '../Item/Item';
 import './ItemList.css';
 
 const axios = require('axios');
-const testJSON = {"jojo": "funny", "amy": "kind", "mike": "fun", "isaiah": "hilarity"}
 
 class ItemList extends Component {
     constructor(props){

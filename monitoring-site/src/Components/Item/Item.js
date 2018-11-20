@@ -3,7 +3,6 @@ import { Col } from 'react-bootstrap';
 import './Item.css';
 
 const classNames = require('classnames');
-const testJSON = {"jojo": "funny", "amy": "kind", "mike": "fun", "isaiah": "hilarity"}
 
 class Item extends Component {
     constructor(props){
